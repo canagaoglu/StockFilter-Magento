@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Webstudioswest_Stockfilter>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Webstudioswest_Stockfilter>
+    </modules>
+</config>

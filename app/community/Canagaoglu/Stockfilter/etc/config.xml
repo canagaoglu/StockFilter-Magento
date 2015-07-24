@@ -1,0 +1,27 @@
+<config>
+    <global>
+        <helpers>
+            <canagaoglu_stockfilter>
+                <class>Canagaoglu_Stockfilter_Helper</class>
+            </canagaoglu_stockfilter>
+            <cataloginventory>
+                <rewrite>
+                    <data>Canagaoglu_Stockfilter_Helper_CatalogInventory_Data</data>
+                </rewrite>
+            </cataloginventory>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <catalog_product_collection_load_before>
+                <observers>
+                    <canagaoglu_stockfilter>
+                        <type>model</type>
+                        <class>Canagaoglu_Stockfilter_Model_Observer</class>
+                        <method>catalogProductCollectionLoadBefore</method>
+                    </canagaoglu_stockfilter>
+                </observers>
+            </catalog_product_collection_load_before>
+        </events>
+    </frontend>
+</config>
